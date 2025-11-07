@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=ege">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254r24a8.js" crossorigin="anonymous"></script>
+    </head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+        <div class="logo"><span class="like">J</span>orDan.</div>
+        <ul id="sidemunu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+            <i class="fa-solid fa-bars" onclick="openmenunu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'am <span>Amani</span><br>jordan  from Uganda</h1>
+        </div>
+</div>
+    </div>
+    <!---------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/About me.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Amani jordan , a passionate front-end web Developer
+                        dedicated to build modern , responsive , and user-friendly websites. I specialize 
+                        in HTML,CSS,JavaScript, and Git, creating clean and maintainable code that brings ideas to life on the web
+
+                        #whatsApp number
+                        <div class="number">+256 726814113</div>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML,CSS,JavaScript</span><br>Building the structure, style , and interactivity of website</li> 
+                            <li><span>Version Control</span><br>Git/Github</li>                        
+                            <li><span>responsive Design</span><br>making websites work on mobile , table, desktop</li> 
+                         </ul>
+                        </div>
+                    <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>2025 - current</span><br>GIT/GITHUB</li>
+                        <li><span>2020 -2024</span><br>HTML,CSS,and JavaScript project</li>                        
+                        <li><span>2012 -2019</span><br>Finished Secondary
+                        Degital Ltd.</li>                       
+                        <li><span>2010 -2020</span><br>Miscrosft,Word,Execel and powerpoint</li>
+                     </ul>
+                     </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>Web Developement</span><br>Online freeCodeCamp/Udemy</li> 
+                            <li><span>2024</span><br>compled studies with a focus sience and compter ,ICT</li>                        
+                            <li><span>Uganda certificate of Education</span><br> S.T PAUL'SSS ,2022</li> 
+                         </ul>
+                        </div>
+
+
+                        <div class="tab-content">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI/UX Design Training at ET
+                                institute</li>
+                            <li><span>2019 -2021</span><br>Team lead at starssp Lic</li>                        
+                            <li><span>2017 -2019</span><br>UI/UX Design Executive at Coin 
+                            Degital Ltd.</li>                    
+                         </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--------------services-------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>web Design</h2>
+                        <p>I design and build responsive websites using HTML,CSS and JavaScript focus 
+                            on creating clean, modern ,and mobile-freindly designs that 
+                            look great on all devices
+                        </p>
+                             <a href="#">Learn more</a>
+                    </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                <h2>Partfolio & Bussiness Website</h2>
+                <p>I create personal partifolios and small bussiness website that help showcase your work,services.
+                    secure web experience .</p>
+                     <a href="#">Learn more</a>
+            </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+
+        <h2>website Maintenance & Updates</h2>
+        <p>I help Keep websites updated , fix bugs , and make perfomance 
+            improvements to ensure fast and secure web experiences
+        </p>
+             <a href="#">Learn more</a>
+    
+    </div>
+</div>
+<!-----------------------partfolio------------------------->
+<div id="Partfolio">
+    <div class="container">
+        <h1 class="sub-title"> My work</h1>
+        <div class="work-list">
+            <div class="work">
+           <img src="img/My project-1.png" alt="">
+           <div class="layer">
+          <h3>Jobs4FreeOnline</h3>
+            <p>The app connects you to the biggest companies in the all world around  find our link.
+            </p>
+              <a href="https://jobs4free-online.vercel.app/">find it</a>
+            </div>
+            </div>
+             <div class="work">
+           <img src="img/Digital.png" alt="">
+           <div class="layer">
+          <h3>Digital Clock</h3>
+            <p> The Digital Clock App is a user-freindly , application that provides real-time  information
+                any loclation worldwide.
+            </p>
+              <a href="https://digital-clock-app-eta.vercel.app/">find it</a>
+            </div>
+        </div>
+         <div class="work">
+           <img src="img/chat app.png" alt="">
+           <div class="layer">
+          <h3>Chat App</h3>
+            <p> A simple and easy-to-use chat app to jot down messages, ideas , and to-do lists
+                anytime , anwhere
+            </p>
+              <a href="https://chat-app-tan-nu.vercel.app/">find it</a>
+            </div>
+    </div>
+</div>
+        <a href="https://chat-app-tan-nu.vercel.app/" class="btn">See more</a>
+   </div>
+</div>
+</div>
+<!--------------------contact------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>alainbuhashe87@gmail.com</p>
+                <p>+256 726814113</p>
+                <div class="social-media">
+                   </a>
+                    <a href=""><img src="img/social.png" class="contact-img"></a>
+                    <a href=""><img src="img/linkedin-sign.png" class="contact-img"></a>
+                    <a href=""><img src="img/tiktok.png" class="contact-img"></a>
+                </div>
+                      <a href="img/RESUME ,jordan.docx" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" require>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
+                            <button type="submit" class="btn btn2"> Submit </button>
+                    
+                    </form>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyrigt My partifolio website Jordan</p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+        
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    </script>
+    <script>
+              var sidemunu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemunu.style.right = "-200px";
+            }
+            
+    </script>
+ </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
