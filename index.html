@@ -1,239 +1,907 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-compatible" content="IE=ege">
-        <meta name ="Amani Jordan Dev is a front end web developer building modern ,responsive websites with html,css,javaScript , and React ."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amani Jordan Dev | Front-End Web Developer</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/c4254r24a8.js" crossorigin="anonymous"></script>
-    </head>
- <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-        <div class="logo"><span class="like">J</span>orDan.</div>
-        <ul id="sidemunu">
-            <li><a href="home">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">service</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-        </ul>
-            <i class="fa-solid fa-bars" onclick="openmenunu()"></i>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Amani Jordan Dev is a front-end web developer from Uganda building modern, responsive, and user-friendly websites with HTML, CSS, JavaScript, Git, and modern web technologies."
+    >
+
+    <meta
+        name="keywords"
+        content="Amani Jordan Dev, front-end developer, web developer Uganda, HTML, CSS, JavaScript, GitHub, responsive websites"
+    >
+
+    <meta name="author" content="Amani Jordan Dev">
+
+    <meta name="theme-color" content="#080808">
+
+    <title>Amani Jordan Dev | Front-End Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script
+        src="https://kit.fontawesome.com/c4254r24a8.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="header" id="home">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>A</span>mani.
+            </a>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li class="close-menu">
+                    <button id="closeBtn" aria-label="Close navigation menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+
+            </ul>
 
         </nav>
-        <div class="header-text">
-            <p><a href="home"></a>Web Developer</p>
-            <h1>Hi, I'am <span>Amani</span><br>jordan Dev from Uganda</h1>
-        </div>
-</div>
-    </div>
-    <!---------------about-------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="about.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>My name is Amani jordan , a passionate front-end web Developer
-                        dedicated to build modern , responsive , and user-friendly websites. I specialize 
-                        in HTML,CSS,JavaScript, and Git, creating clean and maintainable code that brings ideas to life on the web
 
-                        #whatsApp number
-                        <div class="number">+256 726814113</div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+
+    <div class="hero container">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                <span></span> Front-End Web Developer
+            </p>
+
+            <h1>
+                Hi, I'm <span>Amani Jordan</span>
+            </h1>
+
+            <h2>
+                I build modern websites<br>
+                for the <span>web.</span>
+            </h2>
+
+            <p class="hero-description">
+                I create responsive, clean and user-friendly websites
+                using HTML, CSS, JavaScript and modern web technologies.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="hero-socials">
+
+                <a
+                    href="https://github.com/AmaniJordanDev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    href="mailto:alainbuhashe87@gmail.com"
+                    aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/256726814113"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="code-window">
+
+                <div class="window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="code-content">
+
+                    <p>
+                        <span class="purple">const</span>
+                        developer =
                     </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-content active-tab" id="skills">
-                        <ul>
-                            <li><span>HTML,CSS,JavaScript</span><br>Building the structure, style , and interactivity of website</li> 
-                            <li><span>Version Control</span><br>Git/Github</li>                        
-                            <li><span>responsive Design</span><br>making websites work on mobile , table, desktop</li> 
-                         </ul>
-                        </div>
-                    <div class="tab-content" id="Experience">
-                    <ul>
-                        <li><span>2025 - current</span><br>GIT/GITHUB</li>
-                        <li><span>2020 -2024</span><br>HTML,CSS,and JavaScript project</li>                        
-                        <li><span>2012 -2019</span><br>Finished Secondary
-                        Degital Ltd.</li>                       
-                        <li><span>2010 -2020</span><br>Miscrosft,Word,Execel and powerpoint</li>
-                     </ul>
-                     </div>
-                    <div class="tab-content" id="Education">
-                        <ul>
-                            <li><span>Web Developement</span><br>Online freeCodeCamp/Udemy</li> 
-                            <li><span>2024</span><br>compled studies with a focus sience and compter ,ICT</li>                        
-                            <li><span>Uganda certificate of Education</span><br> S.T PAUL'SSS ,2022</li> 
-                         </ul>
-                        </div>
 
+                    <p class="indent">
+                        {
+                    </p>
 
-                        <div class="tab-content">
-                        <ul>
-                            <li><span>2021 - current</span><br>UI/UX Design Training at ET
-                                institute</li>
-                            <li><span>2019 -2021</span><br>Team lead at starssp Lic</li>                        
-                            <li><span>2017 -2019</span><br>UI/UX Design Executive at Coin 
-                            Degital Ltd.</li>                    
-                         </ul>
-                 </div>
+                    <p class="indent-2">
+                        name:
+                        <span class="green">
+                            "Amani Jordan"
+                        </span>,
+                    </p>
+
+                    <p class="indent-2">
+                        role:
+                        <span class="green">
+                            "Front-End Developer"
+                        </span>,
+                    </p>
+
+                    <p class="indent-2">
+                        location:
+                        <span class="green">
+                            "Uganda"
+                        </span>,
+                    </p>
+
+                    <p class="indent-2">
+                        learning:
+                        <span class="green">
+                            "React"
+                        </span>
+                    </p>
+
+                    <p class="indent">
+                        };
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
-        <!--------------services-------------->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My services</h1>
-                <div class="services-list">
+
+</header>
+
+
+<main>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">ABOUT ME</p>
+
+            <h2>
+                Building my skills,
+                <span>one project at a time.</span>
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="profile.jpg"
+                    alt="Amani Jordan Dev">
+
+                <div class="experience-badge">
+                    <strong>Developer</strong>
+                    <span>Growing every day</span>
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="lead">
+                    I'm Amani Jordan, a front-end web developer from Uganda
+                    passionate about creating modern and responsive websites.
+                </p>
+
+                <p>
+                    I enjoy turning ideas into real websites that are
+                    simple to use, visually clean and accessible across
+                    different screen sizes.
+                </p>
+
+                <p>
+                    My development journey is focused on strengthening my
+                    HTML, CSS and JavaScript skills while continuing to learn
+                    modern technologies such as React.
+                </p>
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <div>
+                            <strong>HTML5</strong>
+                            <span>Semantic structure</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <div>
+                            <strong>CSS3</strong>
+                            <span>Responsive design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-brands fa-js"></i>
+                        <div>
+                            <strong>JavaScript</strong>
+                            <span>Web interactivity</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <div>
+                            <strong>Git & GitHub</strong>
+                            <span>Version control</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <p class="section-label">WHAT I DO</p>
+
+            <h2>
+                Services I can
+                <span>help you with.</span>
+            </h2>
+
+            <p>
+                I focus on building simple, responsive and practical
+                websites for individuals and small businesses.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <span class="service-number">01</span>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Building responsive websites using HTML, CSS and
+                    JavaScript with clean and maintainable code.
+                </p>
+
+                <a href="#contact">
+                    Start a project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <span class="service-number">02</span>
+
+                <h3>Portfolio & Business Websites</h3>
+
+                <p>
+                    Creating professional websites that help individuals
+                    and small businesses present their work and services
+                    online.
+                </p>
+
+                <a href="#contact">
+                    Start a project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <span class="service-number">03</span>
+
+                <h3>Website Updates</h3>
+
+                <p>
+                    Helping improve existing websites, fix front-end
+                    issues and make pages more responsive and user-friendly.
+                </p>
+
+                <a href="#contact">
+                    Start a project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section projects" id="projects">
+
+    <div class="container">
+
+        <div class="projects-heading">
+
+            <div>
+
+                <p class="section-label">MY WORK</p>
+
+                <h2>
+                    Featured
+                    <span>projects.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                A selection of websites and applications
+                I've built while developing my skills.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="My project-1.png"
+                        alt="Jobs4FreeOnline website project"
+                        loading="lazy">
+
+                    <div class="project-overlay">
+
+                        <a
+                            href="https://jobs4free-online.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Jobs4FreeOnline project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-top">
+
+                        <h3>Jobs4FreeOnline</h3>
+
+                        <span>01</span>
+
+                    </div>
+
+                    <p>
+                        A job-focused web project designed to help users
+                        discover employment opportunities online.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a
+                        href="https://jobs4free-online.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link">
+
+                        View Live Project
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="Digital.png"
+                        alt="Digital Clock web application"
+                        loading="lazy">
+
+                    <div class="project-overlay">
+
+                        <a
+                            href="https://digital-clock-app-eta.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Digital Clock project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-top">
+
+                        <h3>Digital Clock</h3>
+
+                        <span>02</span>
+
+                    </div>
+
+                    <p>
+                        A real-time digital clock application designed
+                        with a simple and user-friendly interface.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a
+                        href="https://digital-clock-app-eta.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link">
+
+                        View Live Project
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="chat app.png"
+                        alt="Chat application project"
+                        loading="lazy">
+
+                    <div class="project-overlay">
+
+                        <a
+                            href="https://chat-app-tan-nu.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Chat App project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-top">
+
+                        <h3>Chat App</h3>
+
+                        <span>03</span>
+
+                    </div>
+
+                    <p>
+                        A simple web application for writing and organizing
+                        messages, ideas and personal notes.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a
+                        href="https://chat-app-tan-nu.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link">
+
+                        View Live Project
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section class="section journey">
+
+    <div class="container">
+
+        <div class="journey-grid">
+
+            <div>
+
+                <p class="section-label">MY JOURNEY</p>
+
+                <h2>
+                    Learning.
+                    <span>Building.</span>
+                    Growing.
+                </h2>
+
+                <p class="journey-description">
+                    Every project gives me an opportunity to learn something
+                    new. I'm focused on building real projects and improving
+                    my development skills through practice.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Let's Connect
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span>01</span>
+
                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>web Design</h2>
-                        <p>I design and build responsive websites using HTML,CSS and JavaScript focus 
-                            on creating clean, modern ,and mobile-freindly designs that 
-                            look great on all devices
+                        <h3>HTML & CSS</h3>
+                        <p>
+                            Learning the fundamentals of web structure,
+                            styling and responsive layouts.
                         </p>
-                             <a href="#">Learn more</a>
                     </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                <h2>Partfolio & Bussiness Website</h2>
-                <p>I create personal partifolios and small bussiness website that help showcase your work,services.
-                    secure web experience .</p>
-                     <a href="#">Learn more</a>
-            </div>
-        <div>
-            <i class="fa-brands fa-app-store"></i>
 
-        <h2>website Maintenance & Updates</h2>
-        <p>I help Keep websites updated , fix bugs , and make perfomance 
-            improvements to ensure fast and secure web experiences
-        </p>
-             <a href="#">Learn more</a>
-    
-    </div>
-</div>
-<!-----------------------partfolio------------------------->
-<div id="Partfolio">
-    <div class="container">
-        <h1 class="sub-title"> My work</h1>
-        <div class="work-list">
-            <div class="work">
-           <img src="My project-1.png" alt="">
-           <div class="layer">
-          <h3>Jobs4FreeOnline</h3>
-            <p>The app connects you to the biggest companies in the all world around  find our link.
-            </p>
-              <a href="https://jobs4free-online.vercel.app/">find it</a>
-            </div>
-            </div>
-             <div class="work">
-           <img src="Digital.png" alt="">
-           <div class="layer">
-          <h3>Digital Clock</h3>
-            <p> The Digital Clock App is a user-freindly , application that provides real-time  information
-                any loclation worldwide.
-            </p>
-              <a href="https://digital-clock-app-eta.vercel.app/">find it</a>
-            </div>
-        </div>
-         <div class="work">
-           <img src="chat app.png" alt="">
-           <div class="layer">
-          <h3>Chat App</h3>
-            <p> A simple and easy-to-use chat app to jot down messages, ideas , and to-do lists
-                anytime , anwhere
-            </p>
-              <a href="https://chat-app-tan-nu.vercel.app/">find it</a>
-            </div>
-    </div>
-</div>
-        <a href="https://chat-app-tan-nu.vercel.app/" class="btn">See more</a>
-   </div>
-</div>
-</div>
-<!--------------------contact------------------------------>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>alainbuhashe87@gmail.com</p>
-                <p>+256 726814113</p>
-                <div class="social-media">
-                   </a>
-                    <a href=""><img src="social.png" class="contact-img"></a>
-                    <a href=""><img src="linkedin-sign.png" class="contact-img"></a>
-                    <a href=""><img src="tiktok.png" class="contact-img"></a>
                 </div>
-                      <a href="img/RESUME ,jordan.docx" download class="btn btn2">Download Cv</a>
+
+
+                <div class="timeline-item">
+
+                    <span>02</span>
+
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Building interactive web experiences and
+                            learning programming fundamentals.
+                        </p>
+                    </div>
+
                 </div>
-                <div class="contact-right">
-                    <form >
-                        <input type="text" name="Name" placeholder="Your Name" require>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
-                            <button type="submit" class="btn btn2"> Submit </button>
-                    
-                    </form>
 
-                
+
+                <div class="timeline-item">
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Git & GitHub</h3>
+                        <p>
+                            Learning version control and publishing
+                            projects online.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>04</span>
+
+                    <div>
+                        <h3>Next Step: React</h3>
+                        <p>
+                            Continuing to expand my skills by learning
+                            modern front-end development.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
+
     </div>
-    <div class="copyright">
-        <p>copyrigt My partifolio website Jordan</p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="contact-content">
+
+                <p class="section-label">GET IN TOUCH</p>
+
+                <h2>
+                    Have a project
+                    <span>in mind?</span>
+                </h2>
+
+                <p>
+                    I'm open to discussing websites, projects and
+                    opportunities where I can learn, contribute and grow.
+                </p>
+
+                <div class="contact-details">
+
+                    <a href="mailto:alainbuhashe87@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+                            <small>Email</small>
+                            <strong>alainbuhashe87@gmail.com</strong>
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/256726814113"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <div>
+                            <small>WhatsApp</small>
+                            <strong>+256 726 814 113</strong>
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:alainbuhashe87@gmail.com"
+                        class="btn primary-btn">
+
+                        Send Me an Email
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </a>
+
+                    <a
+                        href="img/RESUME%20,jordan.docx"
+                        download
+                        class="btn secondary-btn">
+
+                        Download CV
+                        <i class="fa-solid fa-download"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-decoration">
+
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+        </div>
+
     </div>
-</div>
 
-    <script>
+</section>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents= document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-        
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-        
-    </script>
-    <script>
-              var sidemunu = document.getElementById("sidemenu");
-            function openmenu(){
-                sidemunu.style.right = "-200px";
-            }
-            
-    </script>
- </body>
+</main>
 
 
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <a href="#home" class="logo">
+                <span>A</span>mani.
+            </a>
+
+            <p>
+                Building my skills, one project at a time.
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/AmaniJordanDev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a
+                    href="mailto:alainbuhashe87@gmail.com"
+                    aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+                <a
+                    href="https://wa.me/256726814113"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Amani Jordan Dev. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
+<script src="script.js"></script>
 
-
-
-
-
-
-
-
-
-
+</body>
 </html>
