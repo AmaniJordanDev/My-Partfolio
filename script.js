@@ -1,3 +1,4 @@
+
 // ================= MOBILE MENU =================
 
 const menuBtn = document.getElementById("menuBtn");
@@ -5,7 +6,7 @@ const closeBtn = document.getElementById("closeBtn");
 const navLinks = document.getElementById("navLinks");
 
 
-// Open menu
+// OPEN MENU
 menuBtn.addEventListener("click", () => {
 
     navLinks.classList.add("open");
@@ -15,7 +16,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-// Close menu
+// CLOSE MENU
 closeBtn.addEventListener("click", () => {
 
     navLinks.classList.remove("open");
@@ -25,8 +26,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 
-// Close menu when a navigation link is clicked
-
+// CLOSE MENU WHEN A LINK IS CLICKED
 const links = navLinks.querySelectorAll("a");
 
 links.forEach(link => {
@@ -40,7 +40,6 @@ links.forEach(link => {
     });
 
 });
-
 
 // ================= ACTIVE NAVIGATION =================
 

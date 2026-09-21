@@ -252,6 +252,265 @@ ul {
 }
 
 
+/* =====================================================
+   NAVBAR SOCIAL ICONS
+===================================================== */
+
+.nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 5px;
+    padding-left: 22px;
+    border-left: 1px solid var(--border);
+}
+
+.nav-socials a {
+    position: static !important;
+
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+
+    color: #999999 !important;
+
+    font-size: 16px;
+
+    border-radius: 50%;
+
+    transition: var(--transition);
+}
+
+.nav-socials a::after {
+    display: none !important;
+}
+
+.nav-socials a:hover {
+    color: white !important;
+    background: var(--accent);
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    /* Show hamburger */
+    .menu-btn {
+        display: grid;
+
+        width: 44px;
+        height: 44px;
+
+        place-items: center;
+
+        background: none;
+        border: 1px solid var(--border);
+
+        border-radius: 8px;
+
+        color: white;
+        font-size: 21px;
+
+        cursor: pointer;
+
+        transition: var(--transition);
+    }
+
+    .menu-btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+
+
+    /* Mobile navigation panel */
+    .nav-links {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: min(320px, 85%);
+
+        height: 100vh;
+
+        padding: 100px 35px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+
+        background: var(--bg-light);
+
+        border-left: 1px solid var(--border);
+
+        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.4);
+
+        z-index: 1000;
+
+        transition: right 0.35s ease;
+    }
+
+
+    /* Open menu */
+    .nav-links.open {
+        right: 0;
+    }
+
+
+    /* Mobile links */
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links > li > a {
+        display: inline-block;
+
+        font-size: 17px;
+    }
+
+
+    /* Social icons inside mobile menu */
+    .nav-socials {
+        width: 100%;
+
+        margin: 15px 0 0;
+        padding: 20px 0 0;
+
+        display: flex;
+        gap: 12px;
+
+        border-left: none;
+        border-top: 1px solid var(--border);
+    }
+
+    .nav-socials a {
+        width: 42px;
+        height: 42px;
+
+        border: 1px solid var(--border);
+        border-radius: 50%;
+
+        font-size: 18px;
+    }
+
+
+    /* Close button */
+    .close-menu {
+        display: block !important;
+
+        position: absolute;
+        top: 28px;
+        right: 25px;
+
+        width: auto !important;
+    }
+
+    .close-menu button {
+        width: 42px;
+        height: 42px;
+
+        display: grid;
+        place-items: center;
+
+        background: none;
+
+        border: 1px solid var(--border);
+        border-radius: 50%;
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+
+        transition: var(--transition);
+    }
+
+    .close-menu button:hover {
+        color: white;
+        background: var(--accent);
+        border-color: var(--accent);
+
+        transform: rotate(90deg);
+    }
+
+
+    /* Hero adjustment */
+    .hero {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .hero-card {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 60px);
+        letter-spacing: -3px;
+    }
+
+    .hero h2 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .code-content {
+        padding: 22px;
+        font-size: 12px;
+    }
+
+}
+
+
 /* ================= HERO ================= */
 
 .hero {
@@ -333,36 +592,54 @@ ul {
     margin-top: 35px;
 }
 
+
+/* ================= HERO SOCIALS ================= */
+
 .hero-socials {
     display: flex;
-    gap: 15px;
-
+    text-align: center;
+  justify-content: center;
+    align-items: center;
+    gap: 14px;
     margin-top: 40px;
 }
 
+
+/* Social icon circle */
 .hero-socials a {
-    width: 43px;
-    height: 43px;
+    width: 46px;
+    height: 46px;
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    border: 1px solid var(--border);
+    background: var(--card);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
     border-radius: 50%;
 
-    color: #aaa;
+    color: #ffffff;
+
+    font-size: 18px;
 
     transition: var(--transition);
 }
 
+
+/* Hover */
 .hero-socials a:hover {
-    color: white;
-    border-color: var(--accent);
     background: var(--accent);
 
-    transform: translateY(-4px);
-}
+    border-color: var(--accent);
 
+    color: #ffffff;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(255, 0, 79, 0.25);
+}
 
 /* ================= CODE CARD ================= */
 

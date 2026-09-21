@@ -27,63 +27,76 @@
         src="https://kit.fontawesome.com/c4254r24a8.js"
         crossorigin="anonymous">
     </script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+  
 <!-- ================= NAVIGATION ================= -->
 
 <header class="header" id="home">
 
     <div class="container">
 
-        <nav class="navbar">
+      
+<nav class="navbar">
 
-            <a href="#home" class="logo">
-                <span>A</span>mani DEV.
-            </a>
+    <a href="#home" class="logo">
+        <span>A</span>mani DEV.
+    </a>
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
+    <!-- Menu Icon -->
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="#home" class="active">Home</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#services">Services</a>
+        </li>
+
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+        <li class="close-menu">
+            <button id="closeBtn" aria-label="Close navigation menu">
+                <i class="fa-solid fa-xmark"></i>
             </button>
+        </li>
 
-            <ul class="nav-links" id="navLinks">
+    </ul>
 
-                <li>
-                    <a href="#home" class="active">Home</a>
-                </li>
+</nav>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
 
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-                <li class="close-menu">
-                    <button id="closeBtn" aria-label="Close navigation menu">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </li>
-
-            </ul>
-
-        </nav>
+            
 
     </div>
+
 
     <!-- ================= HERO ================= -->
 
@@ -100,20 +113,18 @@
             </h1>
 
             <h2>
-    I build for the web<br>
-    and <span>teach others to code.</span>
-</h2>
+                I build for the web<br>
+                and <span>teach others to code.</span>
+            </h2>
 
-<p class="hero-description">
-    I'm Amani Jordan, a self-taught frontend developer from Kampala, Uganda.
-    I build responsive, user-friendly web applications with HTML, CSS and
-    JavaScript, while growing my skills in React. I also create coding content
-    for beginners, breaking down programming concepts into simple, practical
-    lessons that help them learn faster and build with confidence.
-</p>
+            <p class="hero-description">
+                I'm Amani Jordan, a self-taught frontend developer from Kampala, Uganda.
+                I build responsive, user-friendly web applications with HTML, CSS and
+                JavaScript, while growing my skills in React. I also create coding content
+                for beginners, breaking down programming concepts into simple, practical
+                lessons that help them learn faster and build with confidence.
+            </p>
 
-
-          
             <div class="hero-buttons">
 
                 <a href="#projects" class="btn primary-btn">
@@ -127,99 +138,58 @@
 
             </div>
 
+
             <div class="hero-socials">
 
-                <a
-                    href="https://github.com/AmaniJordanDev"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+    <!-- GitHub -->
+    <a
+        href="https://github.com/AmaniJordanDev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub">
 
-                <a
-                    href="mailto:alainbuhashe87@gmail.com"
-                    aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
+        <i class="fa-brands fa-github"></i>
 
-                <a
-                    href="https://wa.me/256726814113"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-card">
-
-            <div class="code-window">
-
-                <div class="window-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="code-content">
-
-                    <p>
-                        <span class="purple">const</span>
-                        developer =
-                    </p>
-
-                    <p class="indent">
-                        {
-                    </p>
-
-                    <p class="indent-2">
-                        name:
-                        <span class="green">
-                            "Amani Jordan"
-                        </span>,
-                    </p>
-
-                    <p class="indent-2">
-                        role:
-                        <span class="green">
-                            "Front-End Developer"
-                        </span>,
-                    </p>
-
-                    <p class="indent-2">
-                        location:
-                        <span class="green">
-                            "Uganda"
-                        </span>,
-                    </p>
-
-                    <p class="indent-2">
-                        learning:
-                        <span class="green">
-                            "React"
-                        </span>
-                    </p>
-
-                    <p class="indent">
-                        };
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</header>
+    </a>
 
 
-<main>
+    <!-- Instagram -->
+    <a
+        href="https://instagram.com/amani_jordan_dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram">
+
+        <i class="fa-brands fa-instagram"></i>
+
+    </a>
+
+
+    <!-- LinkedIn -->
+    <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn">
+
+        <i class="fa-brands fa-linkedin-in"></i>
+
+    </a>
+
+
+    <!-- X -->
+    <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="X">
+
+        <i class="fa-brands fa-x-twitter"></i>
+
+    </a>
+
+</div>
+
 
 <!-- ================= ABOUT ================= -->
 
@@ -313,6 +283,10 @@
         </div>
 
     </div>
+
+</header>
+
+
 
 </section>
 
@@ -746,3 +720,6 @@
 
 </section>
 
+</main>
+</body>
+</html>
