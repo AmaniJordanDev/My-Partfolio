@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio projects - Web applications and websites built by Amani Jordan Dev">
+    <title>Projects | Amani Jordan Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-letter">A</span>mani<span class="logo-dev">DEV</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link cta-link">Get In Touch</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-breadcrumb"><a href="index.html">Home</a> / Projects</p>
+    </div>
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section class="projects-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">Showcasing my best projects and web applications</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="project-filters fade-in-up">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="client">Client Work</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- PROJECT 1 -->
+            <div class="project-card fade-in-up" data-category="web">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://amani-message-hub.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Featured</div>
+                    <h3 class="project-title">Amani Message Hub</h3>
+                    <p class="project-description">
+                        A curated message library application for finding the perfect words. 
+                        Search, save, and share messages with a beautiful, intuitive interface.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://amani-message-hub.vercel.app/" target="_blank" class="view-project">
+                        View Live <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card fade-in-up" data-category="client">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://fix-worker.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Client Project</div>
+                    <h3 class="project-title">FixWork</h3>
+                    <p class="project-description">
+                        A modern service marketplace connecting customers with skilled workers. 
+                        Features include job posting, worker profiles, and secure transactions.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://fix-worker.vercel.app/" target="_blank" class="view-project">
+                        View Live <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card fade-in-up" data-category="web">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://clock-watch-by-jordan.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Web App</div>
+                    <h3 class="project-title">Digital Clock</h3>
+                    <p class="project-description">
+                        A responsive digital clock application displaying real-time updates. 
+                        Features multiple timezones and a clean, modern interface.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://clock-watch-by-jordan.vercel.app/" target="_blank" class="view-project">
+                        View Live <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-card fade-in-up" data-category="client">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Client Project</div>
+                    <h3 class="project-title">Wells of Life Church</h3>
+                    <p class="project-description">
+                        Professional church website with service information, events calendar, 
+                        and member portal. Mobile-optimized and SEO friendly.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="view-project" title="Coming Soon">
+                        Coming Soon <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div class="project-card fade-in-up" data-category="personal">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="index.html" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Personal</div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        My personal portfolio website showcasing my skills, services, and projects. 
+                        Built with modern design principles and smooth animations.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="index.html" class="view-project">
+                        View Live <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 6 -->
+            <div class="project-card fade-in-up" data-category="web">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/AmaniJordanDev" target="_blank" class="project-link">
+                            <i class="fas fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-label">Open Source</div>
+                    <h3 class="project-title">GitHub Repository</h3>
+                    <p class="project-description">
+                        Explore my GitHub repository with multiple projects, code snippets, 
+                        and contributions to open-source development.
+                    </p>
+                    <div class="project-tags">
+                        <span>GitHub</span>
+                        <span>Open Source</span>
+                        <span>Community</span>
+                    </div>
+                    <a href="https://github.com/AmaniJordanDev" target="_blank" class="view-project">
+                        Visit GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-projects">
+            <p>Want to see more projects?</p>
+            <a href="contact.html" class="btn btn-primary">
+                Let's Talk About Your Project
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Amani Jordan Dev</h3>
+                <p>Building beautiful web experiences from Kampala, Uganda</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/AmaniJordanDev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amani_jordan_dev/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/AmaniJordanDev" target="_blank" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amani Jordan Dev. All rights reserved. | Built with <span class="heart">❤️</span> by Amani</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
