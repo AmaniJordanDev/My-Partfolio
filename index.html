@@ -34,692 +34,240 @@
 
 <body>
 
-  
+
+
+
 <!-- ================= NAVIGATION ================= -->
-
-<header class="header" id="home">
-
-    <div class="container">
-
-      
 <nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-letter">A</span>mani<span class="logo-dev">DEV</span>
+            </a>
 
-    <a href="#home" class="logo">
-        <span>A</span>mani DEV.
-    </a>
-
-    <!-- Menu Icon -->
-    <button
-        class="menu-btn"
-        id="menuBtn"
-        aria-label="Open navigation menu"
-        aria-expanded="false">
-
-        <i class="fa-solid fa-bars"></i>
-
-    </button>
-
-    <!-- Navigation Menu -->
-    <ul class="nav-links" id="navLinks">
-
-        <li>
-            <a href="#home" class="active">Home</a>
-        </li>
-
-        <li>
-            <a href="#about">About</a>
-        </li>
-
-        <li>
-            <a href="#services">Services</a>
-        </li>
-
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-
-        <li class="close-menu">
-            <button id="closeBtn" aria-label="Close navigation menu">
-                <i class="fa-solid fa-xmark"></i>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </li>
 
-    </ul>
-
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link cta-link">Get In Touch</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-
-            
-
-    </div>
-
-
-    <!-- ================= HERO ================= -->
-
-    <div class="hero container">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                <span></span> Front-End Web Developer
-            </p>
-
-            <h1>
-                Hi, I'm <span>Amani Jordan</span> DEV
-            </h1>
-
-            <h2>
-                I build for the web<br>
-                and <span>teach others to code.</span>
-            </h2>
-
-            <p class="hero-description">
-                I'm Amani Jordan, a self-taught frontend developer from Kampala, Uganda.
-                I build responsive, user-friendly web applications with HTML, CSS and
-                JavaScript, while growing my skills in React. I also create coding content
-                for beginners, breaking down programming concepts into simple, practical
-                lessons that help them learn faster and build with confidence.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    View My Projects
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
-
-            </div>
-
-
-            <div class="hero-socials">
-
-    <!-- GitHub -->
-    <a
-        href="https://github.com/AmaniJordanDev"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub">
-
-        <i class="fa-brands fa-github"></i>
-
-    </a>
-
-
-    <!-- Instagram -->
-    <a
-        href="https://instagram.com/amani_jordan_dev"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram">
-
-        <i class="fa-brands fa-instagram"></i>
-
-    </a>
-
-
-    <!-- LinkedIn -->
-    <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn">
-
-        <i class="fa-brands fa-linkedin-in"></i>
-
-    </a>
-
-
-    <!-- X -->
-    <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="X">
-
-        <i class="fa-brands fa-x-twitter"></i>
-
-    </a>
-
-</div>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section about" id="about">
-
+<!-- ================= HERO SECTION ================= -->
+<header class="hero">
+    <div class="stars"></div>
     <div class="container">
-
-        <div class="section-heading">
-
-            <p class="section-label">ABOUT ME</p>
-
-            <h2>
-                Building my skills,
-                <span>one project at a time.</span>
-            </h2>
-
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-image">
-
-                <img
-                    src="pprofile.png"
-                    alt="Amani Jordan Dev">
-
-                <div class="experience-badge">
-                    <strong>Developer</strong>
-                    <span>Growing every day</span>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle fade-in-up">Welcome to my portfolio</p>
+                <h1 class="hero-title fade-in-up">
+                    Hi, I'm <span class="gradient-text">Amani Jordan</span><br>
+                    <span class="typed-text">Front-End Developer</span>
+                </h1>
+                <p class="hero-description fade-in-up">
+                    I craft beautiful, responsive web experiences with modern technologies. 
+                    Specializing in HTML, CSS, JavaScript, and creating user-friendly interfaces 
+                    that bring ideas to life.
+                </p>
+                
+                <div class="hero-buttons fade-in-up">
+                    <a href="projects.html" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/256700000000?text=Hi%20Amani%2C%20I%20have%20a%20project%20for%20you" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        Message on WhatsApp
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
 
-            </div>
-
-            <div class="about-content">
-
-                <p class="lead">
-                    I'm Amani Jordan, a front-end web developer from Uganda
-                    passionate about creating modern and responsive websites.
-                </p>
-
-                <p>
-                    I enjoy turning ideas into real websites that are
-                    simple to use, visually clean and accessible across
-                    different screen sizes.
-                </p>
-
-                <p>
-                    My development journey is focused on strengthening my
-                    HTML, CSS and JavaScript skills while continuing to learn
-                    modern technologies such as React.
-                </p>
-
-                <div class="skills-grid">
-
-                    <div class="skill">
-                        <i class="fa-brands fa-html5"></i>
-                        <div>
-                            <strong>HTML5</strong>
-                            <span>Semantic structure</span>
-                        </div>
+                <div class="hero-stats fade-in-up">
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
                     </div>
-
-                    <div class="skill">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <div>
-                            <strong>CSS3</strong>
-                            <span>Responsive design</span>
-                        </div>
+                    <div class="stat">
+                        <h3>25+</h3>
+                        <p>Projects Completed</p>
                     </div>
-
-                    <div class="skill">
-                        <i class="fa-brands fa-js"></i>
-                        <div>
-                            <strong>JavaScript</strong>
-                            <span>Web interactivity</span>
-                        </div>
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Happy Clients</p>
                     </div>
-
-                    <div class="skill">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <div>
-                            <strong>Git & GitHub</strong>
-                            <span>Version control</span>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
 
+            <div class="hero-image fade-in-right">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <span class="code-tag">&lt;div&gt;</span>
+                            <span class="code-comment">// Creative Developer</span>
+                            <span class="code-tag">&lt;/div&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+            </div>
         </div>
-
     </div>
 
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="mouse">
+            <span></span>
+        </div>
+    </div>
 </header>
 
-
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="section services" id="services">
-
+<!-- ================= FEATURES SECTION ================= -->
+<section class="features">
     <div class="container">
-
-        <div class="section-heading centered">
-
-            <p class="section-label">WHAT I DO</p>
-
-            <h2>
-                Services I can
-                <span>help you with.</span>
-            </h2>
-
-            <p>
-                I focus on building simple, responsive and practical
-                websites for individuals and small businesses.
-            </p>
-
+        <div class="section-header">
+            <h2 class="section-title">Why Work With Me</h2>
+            <p class="section-subtitle">I bring expertise, creativity, and dedication to every project</p>
         </div>
 
-        <div class="services-grid">
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-code"></i>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
                 </div>
-
-                <span class="service-number">01</span>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    Building responsive websites using HTML, CSS and
-                    JavaScript with clean and maintainable code.
-                </p>
-
-                <a href="#contact">
-                    Start a project
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-
-                <span class="service-number">02</span>
-
-                <h3>Portfolio & Business Websites</h3>
-
-                <p>
-                    Creating professional websites that help individuals
-                    and small businesses present their work and services
-                    online.
-                </p>
-
-                <a href="#contact">
-                    Start a project
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                </div>
-
-                <span class="service-number">03</span>
-
-                <h3>Website Updates</h3>
-
-                <p>
-                    Helping improve existing websites, fix front-end
-                    issues and make pages more responsive and user-friendly.
-                </p>
-
-                <a href="#contact">
-                    Start a project
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section projects" id="projects">
-
-    <div class="container">
-
-        <div class="projects-heading">
-
-            <div>
-
-                <p class="section-label">MY WORK</p>
-
-                <h2>
-                    Featured
-                    <span>projects.</span>
-                </h2>
-
+                <h3>Modern Design</h3>
+                <p>Creating visually stunning and contemporary web designs that stand out</p>
             </div>
 
-            <p>
-                A selection of websites and applications
-                I've built while developing my skills.
-            </p>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Fully Responsive</h3>
+                <p>Optimized for all devices - desktop, tablet, and mobile phones</p>
+            </div>
 
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Fast Performance</h3>
+                <p>Lightning-fast loading times and smooth user interactions</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Clean Code</h3>
+                <p>Well-structured, maintainable code following best practices</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Great Support</h3>
+                <p>Dedicated support and communication throughout the project</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>SEO Optimized</h3>
+                <p>Built for search engines to help your site rank higher</p>
+            </div>
         </div>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT 1 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img
-                        src="project1.png"
-                        alt="Jobs4FreeOnline website project"
-                        loading="lazy">
-
-                    <div class="project-overlay">
-
-                        <a
-                            href="https://amani-message-hub.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Open Jobs4FreeOnline project">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-top">
-
-                        <h3>Amani-Message Hub</h3>
-
-                        <span>01</span>
-
-                    </div>
-
-                    <p>
-                       mani Message Hub is a personal project built to help people find the right words, faster. Whether it's 
-                       a birthday wish, a prayer, a love note or a little daily motivation, the app brings together a curated library of messages you can search,
-                        save and share in seconds.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <a
-                        href="https://amani-message-hub.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View Live Project
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 2 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img
-                        src="fixwork.png"
-                        alt="Digital Clock web application"
-                        loading="lazy">
-
-                    <div class="project-overlay">
-
-                        <a
-                            href="https://digital-clock-app-eta.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Open Digital Clock project">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-top">
-
-                        <h3>FixWork</h3>
-
-                        <span>02</span>
-
-                    </div>
-
-                    <p>
-                        A modern service marketplace platform that connects customers with skilled workers for fast, reliable, and secure job solutions.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <a
-                        href="https://fix-worker.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View Live Project
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 3 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img
-                        src="clock watch .png"
-                        alt="Chat application project"
-                        loading="lazy">
-
-                    <div class="project-overlay">
-
-                        <a
-                            href="https://chat-app-tan-nu.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Open Chat App project">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="project-info">
-
-                    <div class="project-top">
-
-                        <h3>Chat App</h3>
-
-                        <span>03</span>
-
-                    </div>
-
-                    <p>
-                        A responsive digital clock built with HTML, CSS, and JavaScript that displays and updates the current time in real time with a clean, modern interface.
-
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <a
-                        href="https://clock-watch-by-jordan.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View Live Project
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
     </div>
-
 </section>
 
-
-<!-- ================= JOURNEY ================= -->
-
-<section class="section journey">
-
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
     <div class="container">
-
-        <div class="journey-grid">
-
-            <div>
-
-                <p class="section-label">MY JOURNEY</p>
-
-                <h2>
-                    Learning.
-                    <span>Building.</span>
-                    Growing.
-                </h2>
-
-                <p class="journey-description">
-                    Every project gives me an opportunity to learn something
-                    new. I'm focused on building real projects and improving
-                    my development skills through practice.
-                </p>
-
-                <a href="#contact" class="btn primary-btn">
-                    Let's Connect
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <span>01</span>
-
-                    <div>
-                        <h3>HTML & CSS</h3>
-                        <p>
-                            Learning the fundamentals of web structure,
-                            styling and responsive layouts.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <span>02</span>
-
-                    <div>
-                        <h3>JavaScript</h3>
-                        <p>
-                            Building interactive web experiences and
-                            learning programming fundamentals.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <span>03</span>
-
-                    <div>
-                        <h3>Git & GitHub</h3>
-                        <p>
-                            Learning version control and publishing
-                            projects online.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <span>04</span>
-
-                    <div>
-                        <h3>Next Step: React</h3>
-                        <p>
-                            Continuing to expand my skills by learning
-                            modern front-end development.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's collaborate and create something amazing together</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Get Started Today</a>
         </div>
-
     </div>
-
 </section>
 
-</main>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Amani Jordan Dev</h3>
+                <p>Building beautiful web experiences from Kampala, Uganda</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/AmaniJordanDev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amani_jordan_dev/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/AmaniJordanDev" target="_blank" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amani Jordan Dev. All rights reserved. | Built with <span class="heart">❤️</span> by Amani</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 </html>
