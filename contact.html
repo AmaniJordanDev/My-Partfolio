@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Amani Jordan Dev - Get in touch for web development projects">
+    <title>Contact | Amani Jordan Dev</title>
+    <link rel="stylesheet" href="         style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-letter">A</span>mani<span class="logo-dev">DEV</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active cta-link">Get In Touch</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-breadcrumb"><a href="index.html">Home</a> / Contact</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? I'd love to hear from you</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <div class="contact-form fade-in-left">
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your_Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Your_gmail"required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget (Optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-300">Under $300</option>
+                            <option value="300-500">$300 - $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000">$1000+</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info fade-in-right">
+                <h3>Contact Information</h3>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Location</h4>
+                        <p>Kampala, Uganda</p>
+                        <small>Open to remote projects worldwide</small>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <a href="mailto:amanijordanweb45gmail.com">amanijordanweb45@gmail.com</a>
+                        <small>Response within 24 hours</small>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/256791588338?text=Hi%20Amani%2C%20I%20have%20a%20project%20for%20you" target="_blank" rel="noopener noreferrer">
+                            +256 791588338
+                        </a>
+                        <small>Chat anytime</small>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Availability</h4>
+                        <p>Open for freelance projects</p>
+                        <small>Usually available: Mon-Fri, 9 AM - 6 PM (EAT)</small>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Buttons -->
+                <div class="quick-contact">
+                    <h4>Quick Connect</h4>
+                    <a href="https://wa.me/256791588338?text=Hi%20Amani%2C%20I%20have%20a%20project%20for%20you" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:amanijordandev@gmail.com" class="btn btn-email">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-connect">
+                    <h4>Follow Me</h4>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/AmaniJordanDev" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/amani_jordan_dev/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/AmaniJordanDev" target="_blank" title="X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+            <h4>Thank You!</h4>
+            <p>Your message has been sent successfully. I'll get back to you soon!</p>
+            <button onclick="closeSuccess()" class="close-btn">Close</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about my services</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>What's your typical project timeline?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Project timelines vary based on complexity. Typically, a basic website takes 1-2 weeks, 
+                    while more complex projects may take 3-6 weeks or longer. I'll provide a detailed timeline during our initial consultation.</p>
+                </div>
+            </div>
+
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>Do you offer ongoing support?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! I offer various support packages depending on your needs. From 30 days of free support 
+                    included in projects to ongoing maintenance plans, I'm here to help after launch.</p>
+                </div>
+            </div>
+
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>What's your payment process?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>I typically require a 50% deposit to start the project, with the remaining balance due upon completion. 
+                    We can discuss payment terms that work best for your situation.</p>
+                </div>
+            </div>
+
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>Do you work with startups?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! I love working with startups and have flexible pricing options. Let's discuss your 
+                    vision and budget to create something amazing together.</p>
+                </div>
+            </div>
+
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>Can you help with existing websites?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! I can redesign, rebuild, or improve existing websites. Whether it's a complete overhaul or 
+                    specific updates, I'll help bring your vision to life.</p>
+                </div>
+            </div>
+
+            <div class="faq-card fade-in-up">
+                <div class="faq-question">
+                    <h4>Will my website be mobile-friendly?</h4>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Of course! Every website I build is fully responsive and mobile-optimized. Your site will look 
+                    and function beautifully on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Amani Jordan Dev</h3>
+                <p>Building beautiful web experiences from Kampala, Uganda</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/AmaniJordanDev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amani_jordan_dev/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/AmaniJordanDev" target="_blank" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amani Jordan Dev. All rights reserved. | Built with <span class="heart">❤️</span> by Amani</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

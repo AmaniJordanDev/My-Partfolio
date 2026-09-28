@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer Journal - Building, learning, experimenting and documenting my coding journey with project breakdowns, lessons, and videos">
+    <meta name="keywords" content="developer blog, coding journey, project breakdowns, web development, JavaScript, React, learning">
+    <meta name="author" content="Amani Jordan Dev">
+    <meta name="theme-color" content="#080808">
+    <meta property="og:title" content="Developer Journal | Amani Jordan Dev">
+    <meta property="og:description" content="Documenting my journey as a developer - projects, lessons, and videos">
+    <meta property="og:type" content="website">
+    
+    <title>Developer Journal | Amani Jordan Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-letter">A</span>mani<span class="logo-dev">DEV</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link cta-link">Get In Touch</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= BLOG HERO ================= -->
+<section class="blog-hero">
+    <div class="container">
+        <div class="blog-hero-content">
+            <h1 class="blog-hero-title fade-in-up">Developer Journal</h1>
+            <p class="blog-hero-subtitle fade-in-up">Building, learning, experimenting and documenting the journey.</p>
+            <p class="blog-hero-description fade-in-up">
+                Welcome to my development journal. Here I share project breakdowns, coding lessons, my learning journey, 
+                development experiences, and videos from my coding adventure. This is where I document not just the finished 
+                projects, but the process, problems, and solutions along the way.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED ARTICLE ================= -->
+<section class="featured-article-section">
+    <div class="container">
+        <div class="featured-article fade-in-up">
+            <div class="featured-image">
+                <div class="featured-placeholder">
+                    <img src="U2C.png" alt="Uganda2Congo Marketplace" class="featured-image">
+                </div>
+            </div>
+            <div class="featured-content">
+                <div class="article-badge">PROJECT BUILD</div>
+                <h2 class="featured-title">How I Built Uganda2Congo</h2>
+                <p class="featured-description">
+                    A deep dive into building a platform designed to connect people, businesses, products and opportunities 
+                    between Uganda and Congo. I'll walk you through the inspiration, challenges faced, technologies used, 
+                    and solutions implemented.
+                </p>
+                <div class="featured-meta">
+                    <span class="meta-item">
+                        <i class="far fa-calendar"></i>
+                         september 15, 2026
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-clock"></i>
+                        12 min read
+                    </span>
+                </div>
+                <div class="featured-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Project</span>
+                    <span class="tag">Web Development</span>
+                </div>
+                <a href="bloguganda2congo.html" class="btn btn-primary">
+                    Read Article
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SEARCH & FILTER ================= -->
+<section class="blog-controls-section">
+    <div class="container">
+        <div class="blog-controls">
+            <!-- Search -->
+            <div class="search-wrapper fade-in-up">
+                <i class="fas fa-search"></i>
+                <input 
+                    type="text" 
+                    id="blogSearch" 
+                    class="blog-search" 
+                    placeholder="Search articles..."
+                    autocomplete="off"
+                >
+                <span class="search-icon"></span>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-wrapper fade-in-up">
+                <button class="filter-btn active" data-blog-filter="all">
+                    All <span class="filter-count">(8)</span>
+                </button>
+                <button class="filter-btn" data-blog-filter="projects">
+                    Projects <span class="filter-count">(2)</span>
+                </button>
+                <button class="filter-btn" data-blog-filter="javascript">
+                    JavaScript <span class="filter-count">(2)</span>
+                </button>
+                <button class="filter-btn" data-blog-filter="journey">
+                    Journey <span class="filter-count">(2)</span>
+                </button>
+                <button class="filter-btn" data-blog-filter="design">
+                    Design <span class="filter-count">(1)</span>
+                </button>
+                <button class="filter-btn" data-blog-filter="lessons">
+                    Lessons <span class="filter-count">(1)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No articles found</h3>
+            <p>Try adjusting your search or filter to discover more articles</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ARTICLES GRID ================= -->
+<section class="articles-section">
+    <div class="container">
+        <div class="articles-grid" id="articlesGrid">
+            
+            <!-- ARTICLE 1 -->
+            <article class="article-card fade-in-up" data-category="projects" data-title="How I Built Uganda2Congo" data-description="A platform connecting businesses and opportunities between Uganda and Congo">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <img src="U2C.png" class="fas fa-globe">
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">PROJECT BUILD</div>
+                    <h3 class="article-title">How I Built Uganda2Congo</h3>
+                    <p class="article-excerpt">A platform connecting businesses and opportunities between Uganda and Congo. Learn about the development process, challenges, and solutions.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">september 15, 2026</span>
+                        <span class="meta-read">12 min read</span>
+                    </div>
+                    <a href="bloguganda2congo.html" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 2 -->
+            <article class="article-card fade-in-up" data-category="journey" data-title="My Coding Journey: Learning JavaScript and React" data-description="From HTML basics to JavaScript interactivity - the lessons learned along the way">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">JOURNEY</div>
+                    <h3 class="article-title">My Coding Journey: Learning JavaScript and React</h3>
+                    <p class="article-excerpt">From HTML basics to JavaScript interactivity. I share the learning path, resources, challenges, and breakthrough moments in my developer journey.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Dec 8, 2024</span>
+                        <span class="meta-read">15 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 3 -->
+            <article class="article-card fade-in-up" data-category="javascript" data-title="Mastering DOM Manipulation with Vanilla JavaScript" data-description="Essential techniques for working with the DOM without frameworks">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">JAVASCRIPT</div>
+                    <h3 class="article-title">Mastering DOM Manipulation with Vanilla JavaScript</h3>
+                    <p class="article-excerpt">Deep dive into DOM manipulation techniques, event handling, and best practices for building interactive web applications without frameworks.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Dec 1, 2024</span>
+                        <span class="meta-read">10 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 4 -->
+            <article class="article-card fade-in-up" data-category="design" data-title="How I Approach Designing a Modern Website" data-description="My design philosophy and process for creating user-friendly interfaces">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">DESIGN</div>
+                    <h3 class="article-title">How I Approach Designing a Modern Website</h3>
+                    <p class="article-excerpt">My design philosophy, process, and tools. From wireframes to final pixel-perfect designs, I break down how I create beautiful and functional web interfaces.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Nov 24, 2024</span>
+                        <span class="meta-read">8 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 5 -->
+            <article class="article-card fade-in-up" data-category="lessons" data-title="Things I Learned From Building My First Real Projects" data-description="Key lessons and insights from shipping real projects for clients">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">LESSONS</div>
+                    <h3 class="article-title">Things I Learned From Building My First Real Projects</h3>
+                    <p class="article-excerpt">Practical lessons from shipping real projects for clients. What worked, what didn't, and how I approach problem-solving differently now.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Nov 17, 2024</span>
+                        <span class="meta-read">9 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 6 -->
+            <article class="article-card fade-in-up" data-category="javascript" data-title="Building Interactive Components with Vanilla JavaScript" data-description="Creating modular, reusable JavaScript components from scratch">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">JAVASCRIPT</div>
+                    <h3 class="article-title">Building Interactive Components with Vanilla JavaScript</h3>
+                    <p class="article-excerpt">Learn how to build modular, reusable JavaScript components without frameworks. Best practices for component architecture and state management.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Nov 10, 2024</span>
+                        <span class="meta-read">11 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 7 -->
+            <article class="article-card fade-in-up" data-category="projects" data-title="Redesigning My Portfolio from Scratch" data-description="The process of rebuilding my portfolio with modern design and technologies">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">PROJECT BUILD</div>
+                    <h3 class="article-title">Redesigning My Portfolio from Scratch</h3>
+                    <p class="article-excerpt">The complete process of rebuilding my portfolio. From planning to launch, I share design decisions, technology choices, and what I learned.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Nov 3, 2024</span>
+                        <span class="meta-read">13 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ARTICLE 8 -->
+            <article class="article-card fade-in-up" data-category="journey" data-title="What I'm Learning While Becoming a Frontend Developer" data-description="Current focus areas and skills I'm working to master">
+                <div class="article-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">JOURNEY</div>
+                    <h3 class="article-title">What I'm Learning While Becoming a Frontend Developer</h3>
+                    <p class="article-excerpt">My current learning focus: advanced JavaScript, CSS animation, performance optimization, and the mindset shift from hobby coding to professional development.</p>
+                    <div class="article-meta">
+                        <span class="meta-date">Oct 27, 2024</span>
+                        <span class="meta-read">10 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= VIDEO CONTENT SECTION ================= -->
+<section class="video-content-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">From Code to Content</h2>
+            <p class="section-subtitle">Follow the development process through videos, experiments and behind-the-scenes moments</p>
+        </div>
+
+        <div class="videos-grid">
+            <div class="video-card fade-in-up">
+                <div class="video-thumbnail">
+                    <div class="video-placeholder">
+                        <img src="intro.jpeg" class="fas fa-play">
+                    </div>
+                </div>
+                  <div class="video-content">
+                    <div class="platform-badge">YouTube</div>
+                    <h3>Welcome to My Coding Journey</h3>
+                    <p>Welcome to my coding journey. I’m documenting what I build, what I learn, the challenges I face, and my growth as a developer. Follow along as I learn, build, and create.</p>
+                    <a href="https://youtu.be/PJ-Cmd2cVVU?si=ZX6DTwlc9w2SXndF" target="_blank" class="btn btn-secondary btn-sm">
+                        Watch Video
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="video-card fade-in-up">
+                <div class="video-thumbnail">
+                    <div class="video-placeholder">
+                        <img src="tutorial hell.jpeg" class="fas fa-play">
+                    </div>
+                </div>
+                <div class="video-content">
+                    <div class="platform-badge">YouTube</div>
+                    <h3>Building Uganda2Congo - Full Walkthrough</h3>
+                    <p>Complete walkthrough of the Uganda2Congo platform, from architecture to deployment. See the project in action.</p>
+                    <a href="#" target="_blank" class="btn btn-secondary btn-sm">
+                        Watch Video
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="video-card fade-in-up">
+                <div class="video-thumbnail">
+                    <div class="video-placeholder">
+                        <img src="tutorial hell.jpeg" class="fas fa-play">
+                    </div>
+                </div>
+                <div class="video-content">
+                    <div class="platform-badge">TikTok</div>
+                    <h3>I spent 4 months watching coding tutorials, thinking I was learning </h3>
+                    <p> until I realized that coding is learned by building. 💻
+                        Learn the basics, start building, make mistakes, and keep improving. Don’t get stuck in tutorial hell like I did.</p>
+                    <a href="https://www.tiktok.com/@amanijordandev/video/7673502996180880648?q=Amani%20jordan%20dev&t=1790581837922" target="_blank" class="btn btn-secondary btn-sm">
+                        Watch Video
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="video-card fade-in-up">
+                <div class="video-thumbnail">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <div class="platform-badge">YouTube</div>
+                    <h3>How I Built This Portfolio - Code Breakdown</h3>
+                    <p>Detailed code breakdown of my portfolio website. Learn the techniques and best practices I used.</p>
+                    <a href="#" target="_blank" class="btn btn-secondary btn-sm">
+                        Watch Video
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SUBSCRIBE SECTION ================= -->
+<section class="subscribe-section">
+    <div class="container">
+        <div class="subscribe-content fade-in-up">
+            <h2>Never Miss an Update</h2>
+            <p>Get notified when I publish new articles about coding, projects, and my developer journey</p>
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="subscribe-note">I respect your privacy. Unsubscribe anytime.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Amani Jordan Dev</h3>
+                <p>Building beautiful web experiences from Kampala, Uganda</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/AmaniJordanDev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amani_jordan_dev/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amani-jordan-b92b26360/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/AmaniJordanDev" target="_blank" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Amani Jordan Dev. All rights reserved. | Built with <span class="heart">❤️</span> by Amani</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
